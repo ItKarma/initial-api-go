@@ -31,6 +31,7 @@ func (t *tweetcontroller) Create(ctx *gin.Context) {
 }
 
 func (t *tweetcontroller) Delete(ctx *gin.Context) {
+
 	id := ctx.Param("id")
 
 	for idx, tweet := range t.tweets {
